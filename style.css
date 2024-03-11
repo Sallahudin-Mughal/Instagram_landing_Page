@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+.cont{
+    display: grid;
+    grid-template-columns: [left-side] 15% [centerr] 55% [right-side] 30%;
+    height: 100%
+}
+/* .item{
+    border: 1px solid red;
+    height: 50px;
+} */
+.right-side{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 30%;
+    top: 100px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 15%;
+    overflow: hidden;
+    transition: width 0.5s linear;
+    /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+a{
+    position: relative;
+    font-size: 20px;
+    display: table;
+    width: 100%;
+    color: rgb(80, 83, 83);
+    padding: 10px;
+}
+
+.ho-me{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 14;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+.last{
+    position: absolute;
+    bottom: 0;
+}
+.last-1{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+li{
+    align-items: center;
+    justify-content: center;
+}
+.main-right{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.center{
+    height: 100%;
+    width: centerr;
+}
+
+.sugs1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+
+
+.dp-size{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 15px;
+    outline: 3px solid orangered;
+    outline-offset: 5px;
+
+}
+.dp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    /* border: 1px solid; */
+}
+.reel{
+    display: flex;
+    padding-top: 15px;
+}
+.news-feed{
+    
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 100;
+    height: 70vh;
+    
+}
+.news-img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.head{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+}
+.dp{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    /* border: 1px solid; */
+}
+@media only screen and(max-width: 1000px){
+    .dp-size{
+        width: 50px;
+        height: 50px;
+        outline-offset: 3px;
+    }
+
+} 
+@media only screen and(max-width:700px) {
+    .left-side{
+        width: 5%;
+    }
+    .nav-item{
+        display: none;
+    }
+}
